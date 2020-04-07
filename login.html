@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+<style>
+    .container{
+        max-width: 350px;
+        height:560px;
+        margin:0px auto;
+        align-content:center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @media only screen and (min-width: 412px) {
+        .header{
+            margin-top: 10px;
+            width:360px;
+            margin: 0 auto;
+            background-color:  #39c2d7;
+        }
+        body{
+            border: 10px;
+            padding:100px;
+        }
+
+    }
+    .header{
+        background-color:  #39c2d7;
+        height:50px;
+    }
+    .e{
+        padding: 10px;
+        height:50px;
+        padding-bottom: 10px;   
+    }
+    .content{
+        width:320px;
+        padding-top: 20px;
+        padding-left: 27px;
+    }
+    .input{
+        padding-bottom: 10px;
+        position: relative;
+    }
+    .input i{
+        position:absolute;
+        right:0;
+        top:8px;
+        padding-right: 10px;
+    }
+    .btn-submit{
+        width:100%;
+        background-color: #39c2d7;
+        color: ivory;
+    }
+    h6{
+        text-align: center;
+        position: relative;
+
+    }
+    h6::before{
+        background:darkgrey;
+        position: absolute;
+        display: block;
+        content: "";
+        width:130px;
+        height: 2px;
+        left:0;
+        top:50%;
+    }
+    h6::after{
+        background:darkgrey;
+        position: absolute;
+        display: block;
+        content: "";
+        width:130px;
+        height: 2px;
+        right:0;
+        top:50%;
+    }
+    .o-input{
+        padding-bottom: 10px;
+    }
+    .p{
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <p class="e" style="text-align: center;">
+        <span style="float: left; padding-top: 5px;"><i class="fa fa-graduation-cap" aria-hidden="true" style=" color:ivory;padding-left: 5px;"></i></span>
+        <span style="text-align: center;font-size: 24px;color:ivory;align-content: center;">Sign In</span>
+        <span style="float: right;padding-right: 10px;padding-top: 3px;"><i class="fa fa-times" aria-hidden="true" style=" color:ivory;"></i></span></p>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="input">
+                <input type="text" class="form-control" name="email" placeholder="mail@example.com">
+                <i class="fa fa-envelope-o" style="float: left;color:darkgrey"></i>
+            </div>
+            <div class="input">
+                <input type="password" class="form-control" name="password" placeholder="Password">&nbsp;
+                <i class="fa fa-unlock-alt" aria-hidden="true" style="font-size: 20px;color: darkgrey;"></i>
+            </div>
+            <button class="btn-submit form-control"><b>SIGN IN</b></button>
+            <div style="font-size:13px;padding-top: 2px;">Forgot your password? &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Register!</div>
+            <br>
+            <h6><span  style="color: darkgrey;">OR</span></h6>
+            <br>
+            <div class="o-input">
+                <button class="btn-f form-control" style="background-color: #3B5998; color: ivory;"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+            </div>
+            <div class="o-input">
+                <button class="btn-g form-control" style="background-color: #de5246; color: ivory;"><i class="fa fa-google" aria-hidden="true"></i></button>
+            </div>
+            <br>
+            <div class="o-input epam">
+                <button class="btn-g form-control" style="background-color: #a3c644; color: ivory;"><b>&lt;EPAM LOGIN&gt;</b></button>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
